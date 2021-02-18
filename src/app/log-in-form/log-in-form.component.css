@@ -1,0 +1,28 @@
+.maindiv{
+    height: 83.9vh;
+    width: 100%;    
+}
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    font-size: large;
+}  
+.example-full-width {
+    width: 100%;
+}
+.box{
+    height: 50vh;
+    width: 40vw;
+   
+    position: relative;
+    left: 27vw;
+    top: 15vh;   
+}
+div button{
+    width: 10vw;
+}
+div a{
+    text-decoration: none;
+    color: rgba(255, 72, 0, 0.931);
+}

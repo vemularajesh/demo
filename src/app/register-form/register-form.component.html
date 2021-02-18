@@ -1,0 +1,59 @@
+<div class="maindiv">
+    <form [formGroup]="regsiterform" (ngSubmit)="regformsub()" action="" class="example-form ">
+        <div class="box">
+         <h3 class="text-center text-primary fw-bold fs-1">registerform</h3>
+          <div class="row justify-content-around">
+              <!--Name-->
+             <div class="col-6 mt-3">
+                <mat-form-field class="example-full-width">
+                  <mat-label>Name</mat-label>
+                  <input matInput placeholder="name" type="text" formControlName='name'>
+                </mat-form-field>
+             </div>
+             <!--Email-->
+             <div class="col-6 mt-3">
+                <mat-form-field class="example-full-width">
+                  <mat-label>Email</mat-label>
+                  <input matInput placeholder="enter mailid " email type="email" formControlName='email'>
+                </mat-form-field>
+             </div>
+          </div>
+          <div class="row justify-content-around">
+              <!--Phonenumber-->
+             <div class="col-6 mt-3">
+                <mat-form-field class="example-full-width">
+                  <mat-label>phoneno</mat-label>
+                  <input matInput placeholder="Enter phoneno" type="tel" formControlName='phoneno'>
+                </mat-form-field>
+             </div>
+             <!--DOB-->
+             <div class="col-6 mt-3">
+                <mat-form-field class="example-full-width">
+                  <mat-label>DateOfBirth</mat-label>
+                  <input matInput placeholder="enter DOB" type="date" formControlName='dob'>
+                </mat-form-field>
+             </div>
+          </div>
+          <div class="row justify-content-around">
+             <!--Password-->
+            <div class="col-6 mt-3">
+               <mat-form-field class="example-full-width">
+                 <mat-label>password</mat-label>
+                 <input matInput placeholder="password" type="password" formControlName='password'>
+               </mat-form-field>
+            </div>
+            <!--ConformPassword-->
+            <div class="col-6 mt-3">
+               <mat-form-field class="example-full-width">
+                 <mat-label>ConformPassword</mat-label>
+                 <input matInput placeholder="ConformPassword" type="password" formControlName='conformpassword'>
+               </mat-form-field>
+            </div>
+         </div>
+         <!--Submit button-->
+         <div  class="mt-5 d-flex justify-content-center">
+             <button [disabled]="regsiterform.invalid" mat-raised-button color="primary">submit</button>
+         </div>
+        </div>  
+     </form>
+</div>

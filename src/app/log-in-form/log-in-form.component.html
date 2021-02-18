@@ -1,0 +1,29 @@
+<div class="maindiv">
+    <form [formGroup]="loginform" (ngSubmit)="regformsub()" action="" class="example-form">
+        <div class="box">
+            <!--User mailid-->
+            <div class=" mt-4">
+                <mat-form-field class="example-full-width">
+                  <mat-label>Userid</mat-label>
+                  <input matInput placeholder="userID" type="email" email formControlName="userid">
+                </mat-form-field>
+            </div>
+             <!--Email-->
+            <div class=" mt-3">
+                <mat-form-field class="example-full-width">
+                  <mat-label>password</mat-label>
+                  <input matInput placeholder="enter password " type="password" formControlName="password">
+                </mat-form-field>
+            </div>
+            <!--submit button-->
+            <div  class="mt-4 d-flex justify-content-center">
+                <button [disabled]="loginform.invalid" mat-raised-button color="primary">submit</button>
+            </div>
+            <!--links for register and forgetpassword-->
+            <div class="d-flex justify-content-between mt-5">
+                <a routerLink="/register-form">you want register click here</a>
+                <a routerLink="/register-form"> forgetpassword click here</a>
+            </div>
+        </div>
+    </form>
+</div>
